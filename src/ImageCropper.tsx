@@ -37,7 +37,7 @@ export type ImageCropperType = {
   loader?: ReactNode;
 } & Omit<ReactCropProps, 'onChange'>;
 
-const ImageCropper = forwardRef<ImageCropperRef, ImageCropperType>(
+export const ImageCropper = forwardRef<ImageCropperRef, ImageCropperType>(
   (props, ref) => {
     const {
       src,
@@ -267,5 +267,3 @@ const ImageCropper = forwardRef<ImageCropperRef, ImageCropperType>(
 );
 
 ImageCropper.displayName = 'ImageCropper';
-
-export default ImageCropper;

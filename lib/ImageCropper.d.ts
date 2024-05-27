@@ -18,7 +18,7 @@ export type ImageCropperType = {
     refPreviewBox?: RefObject<HTMLCanvasElement>;
     loader?: ReactNode;
 } & Omit<ReactCropProps, 'onChange'>;
-declare const ImageCropper: React.ForwardRefExoticComponent<{
+export declare const ImageCropper: React.ForwardRefExoticComponent<{
     src: File | null;
     scale?: number | undefined;
     rotate?: number | undefined;
@@ -29,4 +29,3 @@ declare const ImageCropper: React.ForwardRefExoticComponent<{
     refPreviewBox?: React.RefObject<HTMLCanvasElement> | undefined;
     loader?: ReactNode;
 } & Omit<ReactCropProps, "onChange"> & React.RefAttributes<ImageCropperRef>>;
-export default ImageCropper;
