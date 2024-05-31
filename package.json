@@ -11,7 +11,7 @@
     "build": "vite build"
   },
   "files": [
-    "dist",
+    "lib",
     "src"
   ],
   "style": "dist/ReactCrop.css",
