@@ -5,7 +5,7 @@ import 'react-image-crop/dist/ReactCrop.css';
 import { ReactCropProps } from 'react-image-crop/src/ReactCrop';
 import { canvasPreview } from './canvasPreview';
 import { useDebounceEffect } from './useDebounceEffect';
-import './styles.css';
+import styles from './ImageCropper.module.scss';
 
 export interface ImageCropperRef {
   // output blob format (default webp)
@@ -258,7 +258,7 @@ export const ImageCropper = forwardRef<ImageCropperRef, ImageCropperType>(
           ) : loader ? (
             loader // put your loader
           ) : (
-            <div className='DefaultLoader'/>
+            <div className={styles.DefaultLoader}/>
           )}
         </ReactCrop>
       </div>

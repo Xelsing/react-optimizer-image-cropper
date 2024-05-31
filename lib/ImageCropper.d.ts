@@ -1,7 +1,6 @@
-import React, { ReactNode, RefObject } from 'react';
-import 'react-image-crop/dist/ReactCrop.css';
+import { default as React, ReactNode, RefObject } from 'react';
 import { ReactCropProps } from 'react-image-crop/src/ReactCrop';
-import './styles.css';
+
 export interface ImageCropperRef {
     returnResult: (type?: 'png' | 'webp') => Promise<Blob>;
     returnOptimized: () => Promise<Blob | null>;
