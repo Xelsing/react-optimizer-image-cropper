@@ -171,9 +171,9 @@ export const ImageCropper = forwardRef<ImageCropperRef, ImageCropperType>(
 
         canvas.toBlob((blob) => {
           setOptimizedBlob(blob)
-        }, 'image/webp');
+        }, 'image/png');
 
-        const dataUrl = canvas.toDataURL('image/webp');
+        const dataUrl = canvas.toDataURL('image/png');
         resolve(dataUrl);
       });
     };
