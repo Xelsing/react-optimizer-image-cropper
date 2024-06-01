@@ -1,11 +1,11 @@
 import React, { forwardRef, ReactNode, RefObject, useEffect, useImperativeHandle, useRef, useState, } from 'react';
-import ReactCrop, { centerCrop, Crop, makeAspectCrop, PixelCrop, } from 'react-image-crop';
-import 'react-image-crop/dist/ReactCrop.css';
 
-import { ReactCropProps } from 'react-image-crop/src/ReactCrop';
 import { canvasPreview } from './canvasPreview';
 import { useDebounceEffect } from './useDebounceEffect';
-import './ImageCropper.css';
+import './ImageCropper.scss';
+import { Crop, PixelCrop } from "./ReactCrop/types";
+import { ReactCrop, ReactCropProps } from "./ReactCrop/ReactCrop";
+import { centerCrop, makeAspectCrop } from "./ReactCrop/utils";
 
 export interface ImageCropperRef {
   // output blob format (default webp)

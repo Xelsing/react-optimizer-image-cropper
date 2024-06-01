@@ -1,6 +1,6 @@
 {
   "name": "react-optimizer-image-cropper",
-  "version": "1.0.4",
+  "version": "1.0.0a",
   "description": "optimize image cropping tool for React based on react-image-crop from Sekoyo",
   "repository": "https://github.com/Xelsing/react-optimizer-image-cropper",
   "main": "lib/lib.umd.js",
@@ -24,13 +24,11 @@
   ],
   "author": "Xelsing (https://github.com/Xelsing)",
   "license": "MIT",
-  "dependencies": {
-    "react-image-crop": "^11.0.5"
-  },
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@vitejs/plugin-react": "^4.3.0",
     "react": "^18.3.1",
+    "sass": "^1.77.4",
     "typescript": "^5.4.5",
     "vite": "^5.2.12",
     "vite-plugin-dts": "^3.9.1"
