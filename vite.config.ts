@@ -22,8 +22,10 @@ export default defineConfig({
   },
   plugins: [
     react({
-      jsxRuntime: 'classic',
+      jsxRuntime: 'classic'
     }),
-    dts(),
+    dts({
+      insertTypesEntry: true,
+    }),
   ],
 })
