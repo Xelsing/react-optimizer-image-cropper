@@ -1,6 +1,6 @@
 {
   "name": "react-optimizer-image-cropper",
-  "version": "1.0.1-a",
+  "version": "1.0.1-b",
   "description": "optimize image cropping tool for React based on react-image-crop from Sekoyo",
   "repository": "https://github.com/Xelsing/react-optimizer-image-cropper",
   "main": "lib/lib.umd.js",
